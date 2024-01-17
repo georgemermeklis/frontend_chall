@@ -132,7 +132,7 @@ const FeedItem: React.FC<FeedItemProps> = ({
           <span className="brand-name">{brand?.name}</span>
         </div>
         <a href="#" className="join-link">
-          Join this brief
+          Join this brief!!
         </a>
       </div>
 
