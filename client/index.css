@@ -1,0 +1,250 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Styles for FeedItem Component */
+.feed-item {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand-info {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.join-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.feed-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 96%;
+  padding: 10px;
+  color: white;
+  background: rgba(50, 49, 49, 0.28);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Styles for Modal Component */
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow-y: scroll;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-column {
+  flex: 1;
+  margin-right: 500px;
+  overflow-y: auto;
+}
+
+.right-column {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: #f3f0f0;
+  color: black;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.custom-modal img {
+  max-width: 100%;
+}
+
+.custom-modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-modal p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.custom-modal button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: transparent !important;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.media-view {
+  width: 55%;
+  height: 100vh;
+  padding: 0px 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.arrow-container {
+  position: fixed;
+  top: 50%;
+  right: 500px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.arrow.up {
+  transform: rotate(180deg);
+}
+
+/* Disable arrow styles */
+.up-arrow.disabled,
+.down-arrow.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.modal-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feed-details-view {
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.left-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Styles for Comments Section */
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comments-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comments-section h3,
+.comments-section p {
+  margin: 0;
+}
+
+.banner-section,
+.details-section {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details-section {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.comments-section {
+  padding: 15px;
+}
+
+.arrow-button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
